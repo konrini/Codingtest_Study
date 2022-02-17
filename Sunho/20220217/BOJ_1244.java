@@ -1,4 +1,4 @@
-package com.boj.day20220216;
+package com.boj.day20220217;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -31,25 +31,27 @@ public class BOJ_1244 {
 		}
 		
 		for(int i=0;i<doing.length;i++) {
+			//남자인 경우
 			if(doing[i][0]==1) {
 				int start = doing[i][1]-1;
-				
+				//숫자바꾸기
 				while(start<arr.length) {
-					
 					
 					arr[start]=(arr[start]+1)%2;
 					
 					start+=doing[i][1];
 				}
 				
+			//여자인 경우	
 			}else {
 				int start = doing[i][1]-1;
 				int minLen = Math.min(start, arr.length-1-start);
 				
 				
-				for(int j=minLen;j>0;j--) {
+				for(int j=minLen;j>=0;j--) {
 					boolean check=true;
-					//해당범위 내에서 check에 걸리면 회문이 아니기 때문에 다음 for문을 실행하고 true면 종료 후 minLen을 반환하자
+					//해당범위 내에서 check에 걸리면 회문이 아니기 때문에 다음 for문을 실행하고, true면 종료 후 minLen을 반환하자
+					//k가 가운데에서부터의 범위이기 때문에 양쪽으로 확인하면 된다.
 					for(int k=j;k>=0;k--) {
 						if(arr[start+k]!=arr[start-k]) {
 							check=false;
@@ -74,8 +76,13 @@ public class BOJ_1244 {
 			}
 		}
 		
-		for(int i:arr) {
-			System.out.print(i+" ");
+		for(int i=0;i<arr.length;i++) {
+			System.out.print(arr[i]+" ");
+			//20개씩 끊어주기
+			if((i%20)==19) {
+				System.out.println("");
+			}
+			
 		}
 		
 		
