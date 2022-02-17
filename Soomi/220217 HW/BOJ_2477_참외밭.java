@@ -42,12 +42,12 @@ public class BOJ_2477_참외밭 {
 		// 작은 네모 넓이 구하기
 		for (int i = 1; i < 7; i++) {
 			if (field[i][0] == 1 || field[i][0] == 2) {
-				if (field[i - 1][1] + field[i + 1][1] == east) {
+				if (field[i - 1][1] + field[i + 1][1] == south) {
 					row = field[i][1];
 				}
 			}
 			if (field[i][0] == 3 || field[i][0] == 4) {
-				if (field[i - 1][1] + field[i + 1][1] == south) {
+				if (field[i - 1][1] + field[i + 1][1] == east) {
 					col = field[i][1];
 				}
 			}
