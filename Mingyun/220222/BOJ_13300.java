@@ -13,6 +13,7 @@ public class BOJ_13300_방배정 {
 
 		String[] strList;
 		strList = br.readLine().split(" ");
+		int N = Integer.parseInt(strList[0]);
 		int K = Integer.parseInt(strList[1]);
 		int cnt = 0; // 총합
 		int[] manArr = new int[7];
