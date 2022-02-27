@@ -75,5 +75,5 @@ PGS : 프로그래머스
 
 ## Authors 👩‍💻👨‍💻
 
- <a href="https://github.com/<your-username>/Python/graphs/contributors"><img src="https://contrib.rocks/image?repo=konrini/Codingtest_Study" /></a>
+ <a href="https://github.com/konrini/Codingtest_Study/graphs/contributors"><img src="https://contrib.rocks/image?repo=konrini/Codingtest_Study" /></a>
 
