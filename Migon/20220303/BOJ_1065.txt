@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		// 자연수 N
+		int N = sc.nextInt();
+		int cnt = 0;
+		for (int i = 1; i <= N; i++) {
+			// 무조건 한수
+			if (i <= 99) {
+				++cnt;
+			}
+			// 각 자리 수가 등차수열을 이룰 때
+			else {
+				int temp = i / 100 - (i % 100) / 10;
+				if ((i % 100) / 10 - ((i % 100) % 10) / 1 == temp) {
+					++cnt;
+				}
+			}
+		}
+		System.out.println(cnt);
+	}
+}
