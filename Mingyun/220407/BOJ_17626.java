@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class BOJ_17626_FourSquares {
 	// 최대 4개까지니까.
 	static int minVal = 4;
-	
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);

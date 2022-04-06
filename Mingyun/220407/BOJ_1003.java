@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class BOJ_1003_피보나치함수 {
 	
-
-	
 	public static void main(String[] args) {
 		// 40개 만들고 , [0의 개수, 1의 개수]
 		int[][] fibo = new int[41][];
