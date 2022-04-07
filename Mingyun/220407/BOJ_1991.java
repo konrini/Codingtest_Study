@@ -16,15 +16,6 @@ public class BOJ_1991_트리순회 {
 		Node left;
 		Node right;
 
-		public Node(String now, Node left, Node right) {
-			super();
-			this.now = now;
-			this.left = left;
-			this.right = right;
-		}
-
-		public Node() {
-		}
 
 		public Node(String now) {
 			this.now = now;
@@ -40,11 +31,6 @@ public class BOJ_1991_트리순회 {
 
 		public void setRight(Node right) {
 			this.right = right;
-		}
-
-		@Override
-		public String toString() {
-			return "Node [now=" + now + ", left=" + left + ", right=" + right + "]";
 		}
 
 	}
